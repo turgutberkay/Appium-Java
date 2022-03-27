@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SingleAndroid"  parallel="tests" thread-count="2">
+    <test name="AndroidTest">
+        <parameter name="browser" value="android-app"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="10.0"/>
+        <parameter name="deviceName" value="emulator-5554"/>
+        <parameter name="app" value="C:\Users\90542\OneDrive\Desktop\Appium-Cucumber\src\test\resources\mobileApp\Falaaddin.apk"/>
+        <parameter name="androidUrl" value="http://0.0.0.0:4723/wd/hub"/>
+        <classes>
+            <class name="testRunners.mobilRunner"/>
+        </classes>
+    </test>
+</suite>
